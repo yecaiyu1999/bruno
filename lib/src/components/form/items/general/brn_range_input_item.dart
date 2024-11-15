@@ -231,7 +231,7 @@ class BrnRangeInputFormItemState extends State<BrnRangeInputFormItem> {
                       ),
                     ),
                     Container(
-                        padding: EdgeInsets.only(left: 5),
+                        padding: EdgeInsets.only(left: 3),// 修改，默认5
                         child: Text(
                           widget.minUnit ?? "",
                           style: TextStyle(

@@ -583,11 +583,13 @@ class BrnDefaultConfigUtils {
       color: defaultCommonConfig.brandPrimary,
       fontSize: defaultCommonConfig.fontSizeSubHead,
       fontWeight: FontWeight.w600,
+      height: 1, // 限定行高度,避免溢出，默认无
     ),
     unselectedLabelStyle: BrnTextStyle(
       color: defaultCommonConfig.colorTextBase,
       fontSize: defaultCommonConfig.fontSizeSubHead,
       fontWeight: FontWeight.normal,
+      height: 1, // 限定行高度,避免溢出，默认无
     ),
     tagRadius: defaultCommonConfig.radiusSm,
     tagNormalTextStyle: BrnTextStyle(

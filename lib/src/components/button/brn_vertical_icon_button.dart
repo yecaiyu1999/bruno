@@ -54,6 +54,7 @@ class BrnVerticalIconButton extends StatelessWidget {
       name: name,
       iconWidget: iconWidget,
       onTap: onTap,
+      padding: 2, // 修改，溢出1.5，默认4
     );
   }
 }

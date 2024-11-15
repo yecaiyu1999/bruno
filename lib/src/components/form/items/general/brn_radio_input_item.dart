@@ -153,7 +153,7 @@ class BrnRadioInputFormItem extends StatefulWidget {
 
 class BrnRadioInputFormItemState extends State<BrnRadioInputFormItem> {
   double _kRadioTitleLeftPadding = 6;
-  double _kRadioIconWidth = 16;
+  double _kRadioIconWidth = 18; // 修改，溢出1，默认16
 
   @override
   Widget build(BuildContext context) {
@@ -291,6 +291,7 @@ class BrnRadioInputFormItemState extends State<BrnRadioInputFormItem> {
         totalTextWidth += optionWidth;
       }
     }
+    print('Total Text Width: $totalTextWidth'); // 输出总宽度，方便调试
     return totalTextWidth;
   }
 

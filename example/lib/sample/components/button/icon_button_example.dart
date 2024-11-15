@@ -65,6 +65,7 @@ class _BrnIconBtnExampleState extends State<BrnIconBtnExample>
                 direction: Direction.right,
                 padding: 4,
                 iconWidget: Icon(Icons.autorenew),
+                widgetWidth: 85,// 修改，溢出5，默认80
                 onTap: () {
                   BrnToast.show('按钮被点击', context);
                 }),
@@ -78,6 +79,7 @@ class _BrnIconBtnExampleState extends State<BrnIconBtnExample>
                 direction: Direction.left,
                 padding: 4,
                 iconWidget: Icon(Icons.backspace),
+                widgetWidth: 85,// 修改，溢出5，默认80
                 onTap: () {
                   BrnToast.show('按钮被点击', context);
                 }),

@@ -82,7 +82,7 @@ class _BrnRangeSelectionGroupWidgetState
 
   @override
   void initState() {
-    _screenWidth = View.of(context).physicalSize.width / View.of(context).devicePixelRatio;
+    // _screenWidth = View.of(context).physicalSize.width / View.of(context).devicePixelRatio;
     _initData();
     _tabController = TabController(vsync: this, length: _firstList.length);
     if (_firstIndex >= 0) {
@@ -96,6 +96,14 @@ class _BrnRangeSelectionGroupWidgetState
     });
     super.initState();
   }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    // Access context-dependent values here
+    _screenWidth = View.of(context).physicalSize.width / View.of(context).devicePixelRatio;
+  }
+
 
   @override
   void dispose() {
